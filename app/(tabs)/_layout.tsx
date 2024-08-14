@@ -24,11 +24,38 @@ export default function TabLayout() {
         }}
       />
       <Tabs.Screen
-        name="explore"
+        name="BluetoothSearchScreen"
         options={{
           title: 'Explore',
           tabBarIcon: ({ color, focused }) => (
             <TabBarIcon name={focused ? 'code-slash' : 'code-slash-outline'} color={color} />
+          ),
+        }}
+      />
+      <Tabs.Screen
+        name="about"
+        options={{
+          title: 'About',
+          tabBarIcon: ({ color, focused }) => (
+            <TabBarIcon name={focused ? 'information-circle' : 'information-circle-outline'} color={color} />
+          ),
+        }}
+      />
+      <Tabs.Screen
+        name="profile"
+        options={{
+          title: 'Profile',
+          tabBarIcon: ({ color, focused }) => (
+            <TabBarIcon name={focused ? 'person' : 'person-outline'} color={color} />
+          ),
+        }}
+      />
+      <Tabs.Screen
+        name="logout"
+        options={{
+          title: 'Logout',
+          tabBarIcon: ({ color, focused }) => (
+            <TabBarIcon name={focused ? 'log-out' : 'log-out-outline'} color={color} />
           ),
         }}
       />
